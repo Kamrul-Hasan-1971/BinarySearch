@@ -34,7 +34,7 @@ ll lower_bnd(ll key )
         {
             low = mid + 1 ;
         }
-        if( key > v1[mid] && key-v1[mid] < mn )
+        if( key > v1[mid] && key-v1[mid] <= mn )
         {
             mn = key-v1[mid] ;
             imediate_junior = mid ;
@@ -76,7 +76,7 @@ ll higher_bnd(ll key )
             low = mid + 1 ;
         }
 
-        if(key < v1[mid] && v1[mid] - key < mn )
+        if(key < v1[mid] && v1[mid] - key <= mn )
         {
             mn = v1[mid] - key ;
             imediate_senior = mid ;
